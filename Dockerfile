@@ -11,7 +11,7 @@ RUN \
 	apt install -y unzip wget ca-certificates && \
 	docker-php-ext-configure mysqli && \
 	docker-php-ext-install mysqli && \
-	wget --no-dns-cache -O formalms.zip https://sourceforge.net/projects/forma/files/version-2.x/formalms-v2.4.5.zip/download && \
+	wget --no-dns-cache -O formalms.zip https://sourceforge.net/projects/forma/files/version-3.x/formalms-3.3.22.zip/download && \
 	unzip formalms.zip && \
 	rm formalms.zip && \
 	cp ./formalms/config.dist.php ./formalms/config.php && \
